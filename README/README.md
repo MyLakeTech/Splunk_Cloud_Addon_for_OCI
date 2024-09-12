@@ -3,7 +3,7 @@
 1. [Overview](#arch)
 1. [OCI Configuration](#oci-config)
 1. [Splunk Plugin Installation and Setup](#splunk-install)
-1. [Prerequisites for OCI Splunk Logging Pluggin 2.2.0 and up](#prereqs)
+1. [Prerequisites for OCI Splunk Logging Plugin 2.2.0 and up](#prereqs)
 1. [Troubleshooting](#troubleshooting)
 1. [Additional Resources](#resources)
 
@@ -95,7 +95,7 @@ The logging addon for Splunk supports access both by instance principals and usi
 Depending on the access method that you choose, define a least-privilege policy as shown in the following examples:
 
 - If you choose the instance-principal access method:
-    1. Create a Dynamic Group with with the Splunk Instance: https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/managingdynamicgroups.htm
+    1. Create a Dynamic Group with the Splunk Instance: https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/managingdynamicgroups.htm
     1. Create an OCI IAM policy like the below
         Allow dynamic-group <Splunk_Dynamic_Group> to use stream-pull in compartment <compartment_of_stream>
 - If you choose the API signing key method:
@@ -166,7 +166,7 @@ Directions: https://docs.splunk.com/Documentation/AddOns/released/Overview/Singl
 5. Click **Next**
 
 
-## <a name="preqs"></a>Prerequisites for OCI Splunk Logging Pluggin 2.2.0 and up
+## <a name="preqs"></a>Prerequisites for OCI Splunk Logging Plugin 2.2.0 and up
 ### **Supported Systems**: Linux
 ### **Splunk Version**: 8 or above
 ### **Deployment Models**: ###
@@ -205,5 +205,5 @@ Directions: https://docs.splunk.com/Documentation/AddOns/released/Overview/Singl
     - Data Inputs → OCI Logging ▪ Disable and Enable the input
     - Log file location - `$SPLUNK_HOME/var/log/splunk/oci_logging.log`
 
-## <a name="resources"></a>Addtional Resources
+## <a name="resources"></a>Additional Resources
 - Visualization App for OCI (Oracle Cloud Infrastructure) App for Splunk: [https://splunkbase.splunk.com/app/5289/](https://splunkbase.splunk.com/app/5289/)
